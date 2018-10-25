@@ -9,14 +9,13 @@ public class WebCam : MonoBehaviour {
     public static WebCamTexture tex;
     public RawImage display;
     public GameObject button;
+    
     //public static bool camshouldstillbeactive = false;
     private void Start()
     {
         button = GameObject.Find("Start");
-        
     }
     
-
     void ButtonClicked()
     {
         button.SetActive(false);
@@ -41,20 +40,20 @@ public class WebCam : MonoBehaviour {
                        
         if (tex != null)
         {
-           
+            
             display.texture = null;
             tex.Stop();
             tex = null;
         }
         else //if(camshouldstillbeactive==true)
         {
+            
             WebCamDevice device = WebCamTexture.devices[currentIndex];
             tex = new WebCamTexture(device.name);
             display.texture = tex;
             tex.Play();
         }
         
-
     }
       	
 }
