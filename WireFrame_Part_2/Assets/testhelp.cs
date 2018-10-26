@@ -20,12 +20,13 @@ public class testhelp : MonoBehaviour {
     public void move(int input)
     {
         Vector3 pos = target.transform.position;
-        pos.x = input; //425
+        pos.x = input+300; //425
         target.transform.position = pos;
 
+        // Exit button
         Vector3 pos2 = target2.transform.position;
-        pos.x = input + 170;
-        pos.y = input-156;
+        pos.x = input + 590;
+        pos.y = input+60;
         target2.transform.position = pos;
 
     }
