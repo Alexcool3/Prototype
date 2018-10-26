@@ -9,6 +9,7 @@ public class SceneManager : MonoBehaviour {
 
     //bool cam = WebCam.camshouldstillbeactive;
 
+    // This function controls what happens when you press a button
     public void LoadScene(int index)
     {
         //WebCam.tex = null;
