@@ -25,7 +25,7 @@ public class testhelp : MonoBehaviour {
 
         Vector3 pos2 = target2.transform.position;
         pos.x = input + 170;
-        pos.y = input-180;
+        pos.y = input-156;
         target2.transform.position = pos;
 
     }
