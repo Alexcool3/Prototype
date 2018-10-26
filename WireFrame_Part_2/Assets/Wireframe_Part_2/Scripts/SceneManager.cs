@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class SceneManager : MonoBehaviour {
-
 
     //bool cam = WebCam.camshouldstillbeactive;
 
@@ -13,20 +11,11 @@ public class SceneManager : MonoBehaviour {
     {
         //WebCam.tex = null;
         Application.LoadLevel(index);
-        if (index == 0)
-        {
-            //cam = false;
-            //WebCam.camshouldstillbeactive = true;
-
-        }
-
+      
         if (WebCam.tex.isPlaying)
         {
             WebCam.tex.Stop();
         }
-
-     
     }
-	
-	
+		
 }
