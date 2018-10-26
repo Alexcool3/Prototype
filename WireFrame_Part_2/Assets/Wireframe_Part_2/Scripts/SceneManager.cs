@@ -12,12 +12,6 @@ public class SceneManager : MonoBehaviour {
     public void LoadScene(int index)
     {
         //WebCam.tex = null;
-
-        if (WebCam.tex.isPlaying)
-        {
-            WebCam.tex.Stop();
-        }
-
         Application.LoadLevel(index);
         if (index == 0)
         {
@@ -25,6 +19,13 @@ public class SceneManager : MonoBehaviour {
             //WebCam.camshouldstillbeactive = true;
 
         }
+
+        if (WebCam.tex.isPlaying)
+        {
+            WebCam.tex.Stop();
+        }
+
+     
     }
 	
 	
