@@ -51,7 +51,6 @@ public class WebCam : MonoBehaviour {
             WebCamDevice device = WebCamTexture.devices[currentIndex];
             tex = new WebCamTexture(device.name);
             display.texture = tex;
-            tex.flip();
             tex.Play();
         }
         
